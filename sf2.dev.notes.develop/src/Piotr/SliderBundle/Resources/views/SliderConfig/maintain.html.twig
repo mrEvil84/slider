@@ -1,0 +1,32 @@
+{% extends "PiotrSliderBundle::layout.html.twig" %}
+
+{% block title "Maintain slider items " %}
+
+{% block content %}
+<table>
+	<tr>
+		<th>Link</th>
+		<th>Description</th>
+		<th>Picture</th>
+
+		<th>Action</th>
+	</tr>
+	{% for item in sliderItems %}
+		<tr>
+			<th>{{ item.getLink }}</th>
+			<th>{{ item.getDescription }}</th>
+			<th><img height="62" width="62" src="/uploads/sliderPictures/{{ item.getPictureName }}" /></th>
+			<th>
+				<a href="{{ path('_update_slider_item', {'id': item.getId}) }}" >Update</a> | 
+				<a href="{{ path('_delete_slider_item', {'id': item.getId}) }}" >Delete</a>
+			</th>
+		</tr>
+		{#% include "PiotrSliderBundle:SliderConfig:singleItem.html.twig" with { "form": sliderItemView } %#}
+	{% endfor %}
+</table>
+{% endblock %}
+
+
+
+
+

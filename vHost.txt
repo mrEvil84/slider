@@ -1,0 +1,13 @@
+
+<VirtualHost *:80>
+    ServerName dev.notes.develop.local
+    ServerAlias www.dev.notes.develop.local
+	DirectoryIndex index.php
+    DocumentRoot "e:/workspace/sf2.dev.notes.develop/sf2.dev.notes.develop/web"
+    <Directory "e:/workspace/sf2.dev.notes.develop/sf2.dev.notes.develop/web">
+		AllowOverride All
+		Require all granted
+    </Directory>
+    ErrorLog "e:/workspace/sf2.dev.notes.develop/apacheLogs/sf2DevNotesDevelop_error.log"
+    CustomLog "e:/workspace/sf2.dev.notes.develop/apacheLogs/sf2DevNotesDevelop_access.log" combined
+</VirtualHost>

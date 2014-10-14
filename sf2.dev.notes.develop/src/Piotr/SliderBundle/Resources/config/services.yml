@@ -1,0 +1,7 @@
+parameters:
+#    piotr_slider.example.class: Piotr\SliderBundle\Example
+
+services:
+#    piotr_slider.example:
+#        class: %piotr_slider.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

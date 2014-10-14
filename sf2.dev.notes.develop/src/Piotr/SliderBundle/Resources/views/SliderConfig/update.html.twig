@@ -1,0 +1,13 @@
+{% extends "PiotrSliderBundle::layout.html.twig" %}
+
+
+{% block title "ItemDetail" %}
+{% block content %}
+
+
+<img height="62" width="62" src="/uploads/sliderPictures/{{ form.vars.value.getPictureName }}" />
+
+{{ form(form) }}
+	
+
+{% endblock %}

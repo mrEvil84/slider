@@ -1,0 +1,13 @@
+piotr_slider_homepage:
+    path:     /
+    defaults: { _controller: PiotrSliderBundle:Slider:index }
+
+slider: 
+    resource: "@PiotrSliderBundle/Controller/SliderController.php"
+    type:     annotation
+    prefix:   /slider
+
+slider_config:
+    resource: "@PiotrSliderBundle/Controller/SliderConfigController.php"
+    type:     annotation
+    prefix:   /sliderConf

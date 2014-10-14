@@ -1,0 +1,3 @@
+piotr_slider:
+    resource: "@PiotrSliderBundle/Resources/config/routing.yml"
+    prefix:   /
